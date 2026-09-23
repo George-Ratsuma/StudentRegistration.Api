@@ -17,7 +17,7 @@ namespace StudentRegistration.Api.Data
         public DbSet<Course> Courses { get; set; }
 
         public DbSet<StudentCourse> StudentCourses { get; set; }
-
+        public DbSet<PersonalInformation> PersonalInformations { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<StudentCourse>()
